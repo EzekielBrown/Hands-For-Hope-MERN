@@ -9,6 +9,7 @@ import {
   FormControl,
   useTheme,
   useMediaQuery,
+  Button,
 } from "@mui/material";
 import { Menu, Close } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
@@ -43,7 +44,11 @@ const Navbar = () => {
           <Typography variant="h4">
             <Link
               to="/volunteer"
-              style={{ textDecoration: "none", color: "white", textTransform: "uppercase" }}
+              style={{
+                textDecoration: "none",
+                color: "white",
+                textTransform: "uppercase",
+              }}
             >
               Volunteer
             </Link>
@@ -51,7 +56,11 @@ const Navbar = () => {
           <Typography variant="h4">
             <Link
               to="/events"
-              style={{ textDecoration: "none", color: "white", textTransform: "uppercase" }}
+              style={{
+                textDecoration: "none",
+                color: "white",
+                textTransform: "uppercase",
+              }}
             >
               Events
             </Link>
@@ -59,29 +68,33 @@ const Navbar = () => {
           <Typography variant="h4">
             <Link
               to="/contact"
-              style={{ textDecoration: "none", color: "white", textTransform: "uppercase" }}
+              style={{
+                textDecoration: "none",
+                color: "white",
+                textTransform: "uppercase",
+              }}
             >
               Contact
             </Link>
           </Typography>
-          <Box
-            sx={{
-              bgcolor: "#EDC1B6",
-              p: 1,
-              width: "165px",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <Typography variant="h4">
-              <Link
-                to="/donate"
-                style={{ textDecoration: "none", color: "white", textTransform: "uppercase" }}
-              >
-                Donate
-              </Link>
-            </Typography>
-          </Box>
+          <Link to="/donate" style={{ textDecoration: "none" }}>
+            <Button
+              fullWidth
+              sx={{
+                fontSize: "18px",
+                p: 1,
+                width: "165px",
+                bgcolor: "#EDC1B6",
+                color: "white",
+                borderRadius: 0,
+                "&:hover": {
+                    bgcolor: "#E85A4F",
+                  },
+              }}
+            >
+              Donate
+            </Button>
+          </Link>
           <FormControl variant="standard" value={fullName}>
             <Select
               value={fullName}
@@ -147,7 +160,11 @@ const Navbar = () => {
             <Typography variant="h4">
               <Link
                 to="/volunteer"
-                style={{ textDecoration: "none", color: "#333333", textTransform: "uppercase" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#333333",
+                  textTransform: "uppercase",
+                }}
               >
                 Volunteer
               </Link>
@@ -155,7 +172,11 @@ const Navbar = () => {
             <Typography variant="h4">
               <Link
                 to="/events"
-                style={{ textDecoration: "none", color: "#333333", textTransform: "uppercase" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#333333",
+                  textTransform: "uppercase",
+                }}
               >
                 Events
               </Link>
@@ -163,7 +184,11 @@ const Navbar = () => {
             <Typography variant="h4">
               <Link
                 to="/contact"
-                style={{ textDecoration: "none", color: "#333333", textTransform: "uppercase" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#333333",
+                  textTransform: "uppercase",
+                }}
               >
                 Contact
               </Link>
@@ -171,29 +196,33 @@ const Navbar = () => {
             <Typography variant="h4">
               <Link
                 to="/donate"
-                style={{ textDecoration: "none", color: "#333333", textTransform: "uppercase" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#333333",
+                  textTransform: "uppercase",
+                }}
               >
                 Donate
               </Link>
             </Typography>
             <Box
-            sx={{
-              bgcolor: "#EDC1B6",
-              p: 1,
-              width: "165px",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <Typography variant="h4">
-              <Link
-                to="/donate"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                Donate
-              </Link>
-            </Typography>
-          </Box>
+              sx={{
+                bgcolor: "#EDC1B6",
+                p: 1,
+                width: "165px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Typography variant="h4">
+                <Link
+                  to="/donate"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Donate
+                </Link>
+              </Typography>
+            </Box>
 
             <FormControl variant="standard" value={fullName}>
               <Select

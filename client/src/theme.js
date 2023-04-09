@@ -31,9 +31,11 @@ export const colorTokens = {
       50: "#62828F",
       100: "#BAC8C9",
       200: "#EDC1B6",
+      250: "#E85A4F",
       300: "#C7AEB4",
       400: "#4A5A67",
       500: "#ffffff",
+      600: "#1A1A1A"
     }
   };
 
@@ -49,6 +51,8 @@ export const themeSettings = (mode) => {
                 dark: colorTokens.primary[200],
                 main: colorTokens.primary[500],
                 light: colorTokens.primary[800],
+                button: colorTokens.brand[200],
+                button2: colorTokens.brand[250],
               },
               neutral: {
                 dark: colorTokens.grey[100],
@@ -65,9 +69,13 @@ export const themeSettings = (mode) => {
           : {
               // palette values for light mode
               primary: {
-                dark: colorTokens.primary[700],
-                main: colorTokens.primary[500],
-                light: colorTokens.primary[50],
+                dark: colorTokens.brand[50],
+                main: colorTokens.brand[100],
+                light: colorTokens.brand[50],
+                button: colorTokens.brand[200],
+                button2: colorTokens.brand[250],
+                text: colorTokens.brand[500],
+                text2: colorTokens.brand[600],
               },
               neutral: {
                 dark: colorTokens.grey[700],
@@ -85,17 +93,21 @@ export const themeSettings = (mode) => {
       typography: {
         fontFamily: ['Agency FB Bold', 'arial'].join(","),
         fontSize: 12,
+        letterSpacing: "2px",
         h1: {
           fontFamily: ['Agency FB Bold', 'arial'].join(","),
           fontSize: 40,
+          letterSpacing: "2px",
         },
         h2: {
           fontFamily: ['Agency FB Bold', 'arial'].join(","),
           fontSize: 32,
+          letterSpacing: "2px",
         },
         h3: {
           fontFamily: ['Agency FB Bold', 'arial'].join(","),
           fontSize: 24,
+          letterSpacing: "2px",
         },
         h4: {
           fontFamily: ['Agency FB Bold', 'arial'].join(","),
@@ -109,6 +121,7 @@ export const themeSettings = (mode) => {
         h6: {
           fontFamily: ['Agency FB Bold', 'arial'].join(","),
           fontSize: 14,
+          letterSpacing: "2px",
         },
       },
     };

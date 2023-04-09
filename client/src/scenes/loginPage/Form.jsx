@@ -238,11 +238,14 @@ const Form = () => {
               fullWidth
               type="submit"
               sx={{
+                fontSize: "18px",
+                letterSpacing: "2px",   	
                 m: "2rem 0",
                 p: "1rem",
-                backgroundColor: palette.primary.main,
-                color: palette.background.alt,
-                "&:hover": { color: palette.primary.main },
+                backgroundColor: palette.primary.button,
+                color: palette.primary.text,
+                borderRadius: 0,
+                "&:hover": { backgroundColor: palette.primary.button2 },
               }}
             >
               {isLogin ? "LOGIN" : "REGISTER"}
@@ -254,7 +257,7 @@ const Form = () => {
               }}
               sx={{
                 textDecoration: "underline",
-                color: palette.primary.main,
+                color: palette.primary.text,
                 "&:hover": {
                   cursor: "pointer",
                   color: palette.primary.light,

@@ -21,10 +21,30 @@ const LoginPage = () => {
         width={isNonMobileScreens ? "50%" : "93%"}
         p="2rem"
         m="2rem auto"
-        backgroundColor={theme.palette.background.alt}
+        backgroundColor={theme.palette.primary.main}
       >
-        <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to Socipedia, the Social Media for Sociopaths!
+        {" "}
+        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+  <Box>
+    <Typography
+      variant="h1"
+      color={theme.palette.primary.text}
+      sx={{ mb: "1.5rem" }}
+    >
+      Login
+    </Typography>
+  </Box>
+</Box>
+
+        <Typography
+          fontWeight="500"
+          variant="h5"
+          color={theme.palette.primary.text}
+          sx={{ mb: "1.5rem" }}
+        >
+          We're grateful for your support and commitment to making a difference
+          in the lives of those in need. To access your account, please enter
+          your login information below.
         </Typography>
         <Form />
       </Box>
