@@ -73,10 +73,17 @@ const Section1 = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   height: "100%",
+                  fontSize: "20px",
                 }}
               >
-                Want to make a difference in your community? Join our team of
-                volunteers today!
+                Volunteering is an incredible way to make a difference in your
+                community and the world. At Hands for Hope, we believe that
+                everyone has something to offer and can contribute to a brighter
+                future. Whether you're interested in working directly with those
+                in need, or supporting the behind-the-scenes work that keeps our
+                organization running, we have a role for you. Join our team of
+                passionate volunteers today and make a positive impact in the
+                lives of others.
               </Typography>
 
               <Link to="/volunteer" style={{ textDecoration: "none" }}>
@@ -115,7 +122,7 @@ const Section1 = () => {
               }}
             >
               <img
-                src="https://source.unsplash.com/random/800x600"
+                src="../assets/volunteerwork2.png"
                 alt="volunteers"
                 style={{ width: "90%", height: "70%", objectFit: "cover" }}
               />

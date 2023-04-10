@@ -6,6 +6,7 @@ import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import AdvertWidget from "scenes/widgets/AdvertWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
+import Volunteer from "scenes/volunteerPage/volunteer";
 
 const VolunteerPage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -14,6 +15,7 @@ const VolunteerPage = () => {
   return (
     <Box>
       <Navbar />
+      <Volunteer />
       <Box
         width="100%"
         padding="2rem 6%"

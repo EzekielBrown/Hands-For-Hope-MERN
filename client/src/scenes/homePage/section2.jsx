@@ -35,7 +35,7 @@ const Section2 = () => {
             textTransform: "uppercase",
           }}
         >
-          section 2
+          Events
         </Typography>
       </Box>
 
@@ -61,7 +61,7 @@ const Section2 = () => {
               }}
             >
               <img
-                src="https://source.unsplash.com/random/800x600"
+                src="../assets/volunteerwork.png"
                 alt="volunteers"
                 style={{ width: "90%", height: "70%", objectFit: "cover" }}
               />
@@ -93,13 +93,18 @@ const Section2 = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   height: "100%",
+                  fontSize: "20px",
                 }}
               >
-                Want to make a difference in your community? Join our team of
-                volunteers today!
+                Join us for exciting events that support our mission and bring
+                communities together. Our events offer opportunities to learn,
+                connect, and give back in meaningful ways. From cleaning sidewalks to
+                building houses, there's something for everyone. Come be a part
+                of the Hands for Hope community and make a difference in the
+                world.
               </Typography>
 
-              <Link to="/volunteer" style={{ textDecoration: "none" }}>
+              <Link to="/events" style={{ textDecoration: "none" }}>
                 <Button
                   fullWidth
                   sx={{

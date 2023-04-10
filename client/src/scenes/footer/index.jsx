@@ -205,10 +205,10 @@ const Footer = () => {
               alignItems: "center",
             }}
           >
-            <Typography variant="h6" sx={{ marginBottom: "1rem" }}>
+            <Typography variant="h6" sx={{ marginBottom: "1rem", color: "white" }}>
               About Us
             </Typography>
-            <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
+            <Typography variant="body1" sx={{ marginBottom: "1rem", color: "white" }}>
               Hands for Hope is a community-based charity dedicated to
               supporting local businesses andindividuals during tough times. Our
               goal is to inspire hope, foster a senseof community, and empower
