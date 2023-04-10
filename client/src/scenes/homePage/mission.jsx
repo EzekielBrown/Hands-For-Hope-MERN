@@ -8,7 +8,6 @@ const Mission = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        height: "500px",
         backgroundColor: "#F9FAFB",
       }}
     >
@@ -17,7 +16,7 @@ const Mission = () => {
           backgroundColor: "#BAC8C9",
           padding: "1rem",
           width: "100%",
-          height: "150px",
+          height: "120px",
           marginBottom: "1rem",
           display: "flex",
           justifyContent: "center",
@@ -30,7 +29,7 @@ const Mission = () => {
             fontWeight: "bold",
             textAlign: "center",
             color: "white",
-            fontSize: "50px",
+            fontSize: "30px",
             letterSpacing: "10px",
             textTransform: "uppercase",
           }}
@@ -45,12 +44,12 @@ const Mission = () => {
           justifyContent: "center",
           textAlign: "center",
           maxWidth: "90%",
-          height: "450px",
+          height: "250px"
         }}
       >
         <Typography
           variant="h5"
-          sx={{ fontSize: "30px" }}
+          sx={{ fontSize: "20px" }}
         >
           Our mission at Hands for Hope is to support our local community and
           businesses during tough times. Through community engagement,
