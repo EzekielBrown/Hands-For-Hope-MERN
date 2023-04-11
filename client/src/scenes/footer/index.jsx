@@ -11,15 +11,17 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "#4A5A67",
-        padding: "2rem",
-
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "300px",
+        minHeight: "300px",
       }}
     >
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        sx={{ justifyContent: "center", alignItems: "center" }}
+      >
         {/* First column */}
         <Grid
           item
@@ -27,13 +29,13 @@ const Footer = () => {
           sm={6}
           md={4}
           sx={{ width: "100%", maxWidth: "100%" }}
-          
         >
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              padding: "1rem 0 0 0",
             }}
           >
             <a href="/">
@@ -126,14 +128,12 @@ const Footer = () => {
         </Grid>
 
         {/* Second column */}
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={12} md={4}>
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
-              width: "330px",
             }}
           >
             <Box
@@ -142,8 +142,9 @@ const Footer = () => {
                 padding: "0.5rem",
                 display: "flex",
                 alignItems: "center",
-                width: "100%",
+                width: "70%",
                 marginBottom: "0.5rem",
+                maxWidth: "500px",
               }}
             >
               <Box
@@ -151,9 +152,11 @@ const Footer = () => {
               >
                 <PhoneIcon sx={{ color: "#fff", marginRight: "0.5rem" }} />
               </Box>
-              <Typography variant="body1" sx={{ color: "#fff" }}>
-                0800 4869 4619
-              </Typography>
+              <Box>
+                <Typography variant="body1" sx={{ color: "#fff" }}>
+                  0800 4869 4619
+                </Typography>
+              </Box>
             </Box>
             <Box
               sx={{
@@ -161,8 +164,9 @@ const Footer = () => {
                 padding: "0.5rem",
                 display: "flex",
                 alignItems: "center",
-                width: "100%",
+                width: "70%",
                 marginBottom: "0.5rem",
+                maxWidth: "500px",
               }}
             >
               <Box
@@ -180,8 +184,9 @@ const Footer = () => {
                 padding: "0.5rem",
                 display: "flex",
                 alignItems: "center",
-                width: "100%",
+                width: "70%",
                 marginBottom: "0.5rem",
+                maxWidth: "500px",
               }}
             >
               <Box
@@ -203,12 +208,19 @@ const Footer = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              maxWidth: "600px",
             }}
           >
-            <Typography variant="h6" sx={{ marginBottom: "1rem", color: "white" }}>
+            <Typography
+              variant="h6"
+              sx={{ marginBottom: "1rem", color: "white" }}
+            >
               About Us
             </Typography>
-            <Typography variant="body1" sx={{ marginBottom: "1rem", color: "white" }}>
+            <Typography
+              variant="body1"
+              sx={{ margin: "1rem 1rem 0 1rem", color: "white" }}
+            >
               Hands for Hope is a community-based charity dedicated to
               supporting local businesses andindividuals during tough times. Our
               goal is to inspire hope, foster a senseof community, and empower

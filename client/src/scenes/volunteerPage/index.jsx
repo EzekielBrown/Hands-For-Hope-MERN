@@ -7,6 +7,7 @@ import PostsWidget from "scenes/widgets/PostsWidget";
 import AdvertWidget from "scenes/widgets/AdvertWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
 import Volunteer from "scenes/volunteerPage/volunteer";
+import Footer from "scenes/footer";
 
 const VolunteerPage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -27,6 +28,14 @@ const VolunteerPage = () => {
           <UserWidget userId={_id} picturePath={picturePath} />
         </Box>
 
+        <Box
+          flexBasis={isNonMobileScreens ? "42%" : undefined}
+          mt={isNonMobileScreens ? undefined : "2rem"}
+        >
+          <MyPostWidget picturePath={picturePath} />
+          
+        </Box>
+
         {isNonMobileScreens && (
           <Box flexBasis="26%">
             <AdvertWidget />
@@ -34,7 +43,9 @@ const VolunteerPage = () => {
             <FriendListWidget userId={_id} />
           </Box>
         )}
+        
       </Box>
+      <Footer />
     </Box>
   );
 };

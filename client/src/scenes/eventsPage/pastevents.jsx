@@ -9,7 +9,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-const Events = () => {
+const PastEvents = () => {
   return (
     <Box
       sx={{
@@ -20,37 +20,9 @@ const Events = () => {
         paddingBottom: "5rem",
       }}
     >
-      <Box
-        sx={{
-          backgroundColor: "#BAC8C9",
-          backgroundImage: "linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent)",
-          backgroundSize: "100px 100px",
-          padding: "1rem",
-          width: "100%",
-          height: "120px",
-          marginBottom: "5rem",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Typography
-          variant="h3"
-          sx={{
-            fontWeight: "bold",
-            textAlign: "center",
-            color: "white",
-            fontSize: "40px",
-            letterSpacing: "10px",
-            textTransform: "uppercase",
-          }}
-        >
-          Events
-        </Typography>
-      </Box>
       <Box sx={{ py: 8, bgcolor: "#F5F5F5", padding: "0 30px 0 30px" }}>
         <Typography variant="h3" sx={{ fontWeight: "bold", mb: 4 }}>
-          Upcoming Events
+          Past Events
         </Typography>
 
         <Grid container spacing={4}>
@@ -71,21 +43,17 @@ const Events = () => {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                title="Beach Clean Up"
+                title="Bike Restoration"
                 subheader="May 14, 2023"
               />
               <CardMedia
                 component="img"
                 height="194"
-                image="../assets/beach.png"
+                image="../assets/bike.png"
               />
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                  The event aims to remove litter and plastic waste from the
-                  beach and promote environmentally friendly practices.
-                  Volunteers will be provided with gloves, bags, and other
-                  necessary equipment, and will be treated to a free lunch after
-                  the cleanup.
+                The event aims to collect old, unused bikes from community members, repair them, and donate them to those in need. Volunteers will help collect bikes, perform basic repairs, and prepare the bikes for donation.
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
@@ -116,22 +84,17 @@ const Events = () => {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                title="Community Garden Setup"
+                title="Electronic Repair"
                 subheader="July 1, 2023"
               />
               <CardMedia
                 component="img"
                 height="194"
-                image="../assets/garden.png"
+                image="../assets/electronic.png"
               />
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                  The event will involve constructing raised garden beds,
-                  preparing the soil, planting fruits and vegetables, and
-                  installing a drip irrigation system. The garden will provide
-                  fresh produce to the local community, promote sustainable
-                  living practices, and provide an opportunity for community
-                  members to come together and work towards a common goal.
+                The event aims to repair and refurbish old electronics and appliances to give them a second life, rather than throwing them away. Volunteers will help collect broken appliances and electronics, troubleshoot issues, and repair them if possible.
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
@@ -162,21 +125,17 @@ const Events = () => {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                title="Grafiti Removal"
+                title="Pet Event"
                 subheader="August 23, 2023"
               />
               <CardMedia
                 component="img"
                 height="194"
-                image="../assets/grafiti.png"
+                image="../assets/pet.png"
               />
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                  Volunteers will be provided with paint, brushes, and other
-                  necessary equipment, and will work together to cover up the
-                  graffiti and restore the affected area to its original state.
-                  This event aims to promote community involvement in
-                  maintaining the cleanliness and beauty of public spaces.
+                The event aims to connect local animal shelters with potential adopters, and provide a fun and informative environment for pet owners and animal lovers. Volunteers will help with setting up booths, caring for animals, providing information about pet care, and facilitating adoptions.
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
@@ -195,4 +154,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default PastEvents;

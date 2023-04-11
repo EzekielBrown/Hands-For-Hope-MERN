@@ -58,6 +58,8 @@ const Section2 = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                maxHeight: "600px",
+                maxWidth: "800px",
               }}
             >
               <img
@@ -73,7 +75,7 @@ const Section2 = () => {
             item
             xs={12}
             md={6}
-            sx={{ display: "flex", alignItems: "center" }}
+            sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
           >
             <Box
               sx={{
@@ -82,6 +84,8 @@ const Section2 = () => {
                 width: "90%",
                 height: "250px",
                 position: "relative",
+                maxHeight: "600px",
+                maxWidth: "800px",
               }}
             >
               <Typography

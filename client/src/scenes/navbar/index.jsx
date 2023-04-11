@@ -2,33 +2,22 @@ import { useState } from "react";
 import {
   Box,
   IconButton,
-  InputBase,
   Typography,
-  Select,
-  MenuItem,
-  FormControl,
   useTheme,
   useMediaQuery,
   Button,
 } from "@mui/material";
 import { Menu, Close } from "@mui/icons-material";
-import { useDispatch, useSelector } from "react-redux";
-import { setLogout } from "state";
 import FlexBetween from "components/FlexBetween";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
-  const dispatch = useDispatch();
-  const user = useSelector((state) => state.user);
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
 
   const theme = useTheme();
-  const neutralLight = theme.palette.neutral.light;
   const background = theme.palette.background.default;
   const alt = theme.palette.background.alt;
-
-  const fullName = `${user.firstName} ${user.lastName}`;
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
@@ -95,30 +84,7 @@ const Navbar = () => {
               Donate
             </Button>
           </Link>
-          <FormControl variant="standard" value={fullName}>
-            <Select
-              value={fullName}
-              sx={{
-                backgroundColor: neutralLight,
-                width: "150px",
-                borderRadius: "0.25rem",
-                p: "0.25rem 1rem",
-                "& .MuiSvgIcon-root": {
-                  pr: "0.25rem",
-                  width: "3rem",
-                },
-                "& .MuiSelect-select:focus": {
-                  backgroundColor: neutralLight,
-                },
-              }}
-              input={<InputBase />}
-            >
-              <MenuItem value={fullName}>
-                <Typography>{fullName}</Typography>
-              </MenuItem>
-              <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
-            </Select>
-          </FormControl>
+          
         </FlexBetween>
       ) : (
         <IconButton
@@ -224,32 +190,7 @@ const Navbar = () => {
               </Typography>
             </Box>
 
-            <FormControl variant="standard" value={fullName}>
-              <Select
-                value={fullName}
-                sx={{
-                  backgroundColor: neutralLight,
-                  width: "150px",
-                  borderRadius: "0.25rem",
-                  p: "0.25rem 1rem",
-                  "& .MuiSvgIcon-root": {
-                    pr: "0.25rem",
-                    width: "3rem",
-                  },
-                  "& .MuiSelect-select:focus": {
-                    backgroundColor: neutralLight,
-                  },
-                }}
-                input={<InputBase />}
-              >
-                <MenuItem value={fullName}>
-                  <Typography>{fullName}</Typography>
-                </MenuItem>
-                <MenuItem onClick={() => dispatch(setLogout())}>
-                  Log Out
-                </MenuItem>
-              </Select>
-            </FormControl>
+
           </FlexBetween>
         </Box>
       )}
