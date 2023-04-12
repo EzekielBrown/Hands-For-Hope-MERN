@@ -23,6 +23,7 @@ const VolunteerPage = () => {
         display={isNonMobileScreens ? "flex" : "block"}
         gap="0.5rem"
         justifyContent="space-between"
+        minHeight="60vh"
       >
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <UserWidget userId={_id} picturePath={picturePath} />
@@ -33,6 +34,9 @@ const VolunteerPage = () => {
           mt={isNonMobileScreens ? undefined : "2rem"}
         >
           <MyPostWidget picturePath={picturePath} />
+          
+          <PostsWidget userId={_id} />
+          
           
         </Box>
 

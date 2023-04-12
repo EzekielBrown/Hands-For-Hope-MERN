@@ -1,6 +1,5 @@
-import { Typography, useTheme } from "@mui/material";
+import { Typography, useTheme, Box } from "@mui/material";
 import FlexBetween from "components/FlexBetween";
-import WidgetWrapper from "components/WidgetWrapper";
 
 const AdvertWidget = () => {
   const { palette } = useTheme();
@@ -9,22 +8,32 @@ const AdvertWidget = () => {
   const medium = palette.neutral.medium;
 
   return (
-    <WidgetWrapper>
+    <Box
+      sx={{
+        padding: "1.5rem 1.5rem 0.75rem 1.5rem",
+        backgroundColor: "#EDC1B6",
+      }}
+    >
       <FlexBetween>
         <Typography color={dark} variant="h5" fontWeight="500">
-          Sponsored
+          Upcoming
         </Typography>
-        <Typography color={medium}>Create Ad</Typography>
       </FlexBetween>
+      <img
+        width="100%"
+        height="auto"
+        alt="advert"
+        src="./assets/beach.png"
+        style={{ margin: "0.75rem 0" }}
+      />
       <FlexBetween>
-        <Typography color={main}>MikaCosmetics</Typography>
-        <Typography color={medium}>mikacosmetics.com</Typography>
+        <Typography color={main}>Beach Clean Up</Typography>
+        <Typography color="white">May 14, 2023</Typography>
       </FlexBetween>
-      <Typography color={medium} m="0.5rem 0">
-        Your pathway to stunning and immaculate beauty and made sure your skin
-        is exfoliating skin and shining like light.
+      <Typography color="white" m="0.5rem 0">
+      The event aims to remove litter and plastic waste from the beach and promote environmentally friendly practices. Volunteers will be provided with gloves, bags, and other necessary equipment, and will be treated to a free lunch after the cleanup.
       </Typography>
-    </WidgetWrapper>
+    </Box>
   );
 };
 

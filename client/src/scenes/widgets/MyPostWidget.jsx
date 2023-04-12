@@ -20,7 +20,6 @@ import {
   import FlexBetween from "components/FlexBetween";
   import Dropzone from "react-dropzone";
   import UserImage from "components/UserImage";
-  import WidgetWrapper from "components/WidgetWrapper";
   import { useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
   import { setPosts } from "state";
@@ -58,7 +57,10 @@ import {
     };
   
     return (
-      <WidgetWrapper>
+      <Box
+      sx={{
+        padding: "1.5rem 1.5rem 0.75rem 1.5rem",
+      }}>
         <FlexBetween gap="1.5rem">
           <UserImage image={picturePath} />
           <InputBase
@@ -166,7 +168,7 @@ import {
             POST
           </Button>
         </FlexBetween>
-      </WidgetWrapper>
+      </Box>
     );
   };
   

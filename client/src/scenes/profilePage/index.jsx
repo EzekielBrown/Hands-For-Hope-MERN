@@ -7,6 +7,7 @@ import FriendListWidget from "scenes/widgets/FriendListWidget";
 import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import UserWidget from "scenes/widgets/UserWidget";
+import Footer from "scenes/footer";
 
 const ProfilePage = () => {
   const [user, setUser] = useState(null);
@@ -53,6 +54,7 @@ const ProfilePage = () => {
           <PostsWidget userId={userId} isProfile />
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };
