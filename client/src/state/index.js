@@ -14,10 +14,12 @@ export const authSlice = createSlice({
     setMode: (state) => {
       state.mode = state.mode === "light" ? "dark" : "light";
     },
+    // Set the user and token information when the user logs in
     setLogin: (state, action) => {
       state.user = action.payload.user;
       state.token = action.payload.token;
     },
+    // Clear the user and token information when the user logs out
     setLogout: (state) => {
       state.user = null;
       state.token = null;

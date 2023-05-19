@@ -159,18 +159,6 @@ const Navbar = () => {
                 Contact
               </Link>
             </Typography>
-            <Typography variant="h4">
-              <Link
-                to="/donate"
-                style={{
-                  textDecoration: "none",
-                  color: "#333333",
-                  textTransform: "uppercase",
-                }}
-              >
-                Donate
-              </Link>
-            </Typography>
             <Box
               sx={{
                 bgcolor: "#EDC1B6",

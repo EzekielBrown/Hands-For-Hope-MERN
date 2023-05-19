@@ -222,7 +222,7 @@ const Footer = () => {
               sx={{ margin: "1rem 1rem 0 1rem", color: "white" }}
             >
               Hands for Hope is a community-based charity dedicated to
-              supporting local businesses andindividuals during tough times. Our
+              supporting local businesses and individuals during tough times. Our
               goal is to inspire hope, foster a senseof community, and empower
               individuals and businesses through our programs and initiatives.
             </Typography>

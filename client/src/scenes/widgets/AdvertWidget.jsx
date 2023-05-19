@@ -5,7 +5,6 @@ const AdvertWidget = () => {
   const { palette } = useTheme();
   const dark = palette.neutral.dark;
   const main = palette.neutral.main;
-  const medium = palette.neutral.medium;
 
   return (
     <Box
@@ -16,7 +15,7 @@ const AdvertWidget = () => {
     >
       <FlexBetween>
         <Typography color={dark} variant="h5" fontWeight="500">
-          Upcoming
+          Upcoming Community Events
         </Typography>
       </FlexBetween>
       <img
