@@ -43,8 +43,7 @@ const LoginPage = () => {
           sx={{ mb: "1.5rem" }}
         >
           We're grateful for your support and commitment to making a difference
-          in the lives of those in need. To access your account, please enter
-          your login information below.
+          in the lives of those in need. To access your account and to start volunteering, please login below!
         </Typography>
         <Form />
       </Box>

@@ -178,6 +178,7 @@ const Form = () => {
                   border={`1px solid ${palette.neutral.medium}`}
                   borderRadius="5px"
                   p="1rem"
+                  
                 >
                   <Dropzone
                     acceptedFiles=".jpg,.jpeg,.png"

@@ -226,7 +226,7 @@ const Footer = () => {
               goal is to inspire hope, foster a senseof community, and empower
               individuals and businesses through our programs and initiatives.
             </Typography>
-            <Box sx={{ display: "flex", gap: "1rem" }}>
+            <Box sx={{ display: "flex", gap: "1rem", padding: "20px 0 0 0" }}>
               <Link href="https://www.facebook.com/" target="_blank">
                 <FacebookIcon sx={{ fontSize: "2rem" }} />
               </Link>
