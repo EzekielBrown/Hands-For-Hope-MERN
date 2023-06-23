@@ -1,7 +1,10 @@
+import React from 'react';
 import { Box, Typography } from "@mui/material";
+import FadeInObserver from "components/FadeInObserver";
 
 const Mission = () => {
   return (
+    <FadeInObserver>
     <Box
       sx={{
         display: "flex",
@@ -11,6 +14,7 @@ const Mission = () => {
         backgroundColor: "#F9FAFB",
       }}
     >
+      
       <Box
         sx={{
           backgroundColor: "#BAC8C9",
@@ -57,7 +61,9 @@ const Mission = () => {
           hope and create a brighter future for all.
         </Typography>
       </Box>
+      
     </Box>
+    </FadeInObserver>
   );
 };
 

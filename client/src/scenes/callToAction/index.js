@@ -1,8 +1,10 @@
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import FadeInObserver from "components/FadeInObserver";
 
 const CallToAction = () => {
   return (
+    <FadeInObserver>
     <Box
       sx={{
         display: "flex",
@@ -84,6 +86,7 @@ const CallToAction = () => {
         </Link>
       </Box>
     </Box>
+    </FadeInObserver>
   );
 };
 

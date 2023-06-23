@@ -1,8 +1,10 @@
 import { Box, Grid, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import FadeInObserver from "components/FadeInObserver";
 
 const Section2 = () => {
   return (
+    <FadeInObserver>
     <Box
       sx={{
         display: "flex",
@@ -133,6 +135,7 @@ const Section2 = () => {
         </Grid>
       </Box>
     </Box>
+    </FadeInObserver>
   );
 };
 

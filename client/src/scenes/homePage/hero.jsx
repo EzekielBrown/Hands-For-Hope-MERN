@@ -28,6 +28,12 @@ const Hero = () => {
           alignItems: "center",
           marginRight: "25%",
           marginBottom: "-50px",
+          opacity: 0,
+          animation: "fadeIn 2s ease-in-out forwards",
+          "@keyframes fadeIn": {
+            "0%": { opacity: 0 },
+            "100%": { opacity: 1 },
+          },
         }}
       >
         <Typography
@@ -59,7 +65,7 @@ const Hero = () => {
               color: "white",
               borderRadius: 0,
               position: "relative",
-              bottom: "20px", // Set the bottom margin to half of the button height
+              bottom: "20px",
               "&:hover": {
                 bgcolor: "#E85A4F",
               },
