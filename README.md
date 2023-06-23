@@ -28,6 +28,6 @@ To run the backend, navigate to the server directory and run `npm start`
 
 [CRUD Table](https://docs.google.com/spreadsheets/d/11vzRNEJc42mSuIfXco8C8A5w13q997S25flOPAIc4sE/edit)<br>
 [Report](https://docs.google.com/document/d/1W5EdFjuNpw_8sRUlICDUxSLkr3-4n3xiRfqUWaTZgBI/edit)<br>
-[Report 2](https://docs.google.com/document/d/1pCj4Y_CUafkyx2E8pKNUwQmaGrEgy6nxvj6TOymP67E/edit)
+
 
 
