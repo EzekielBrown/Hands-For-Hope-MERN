@@ -37,6 +37,14 @@ const UserSchema = new mongoose.Schema(
     occupation: String,
     viewedProfile: Number,
     impressions: Number,
+    amountDonated: {
+      type: Number,
+      default: 0,
+    },
+    tokens: {
+      type: Number,
+      default: 0,
+    },
   },
   { timestamps: true }
 );

@@ -4,8 +4,8 @@ Hands for Hope is a charity website where you can help others with small jobs an
 
 ## Getting Started
 
-To run the frontend, navigate to the client directory and run `npm start`
-To run the backend, navigate to the server directory and run `npm run dev`
+To run the frontend, navigate to the client directory and run `npm start`<br>
+To run the backend, navigate to the server directory and run `npm start`
 
 
 ## Features
