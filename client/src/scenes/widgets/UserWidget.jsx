@@ -11,6 +11,7 @@ import FlexBetween from "components/FlexBetween";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Tooltip } from "@mui/material";
 
 const UserWidget = ({ userId, picturePath }) => {
   const [user, setUser] = useState(null);
@@ -87,11 +88,15 @@ const UserWidget = ({ userId, picturePath }) => {
       {/* LOCATION / JOB */}
       <Box p="1rem 0">
         <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
+        <Tooltip title="Location">
           <LocationOnOutlined fontSize="large" sx={{ color: "#62828F" }} />
+          </Tooltip>
           <Typography color="#1A1A1A">{location}</Typography>
         </Box>
         <Box display="flex" alignItems="center" gap="1rem">
+          <Tooltip title="Job Title">
           <WorkOutlineOutlined fontSize="large" sx={{ color: "#62828F" }} />
+          </Tooltip>
           <Typography color="#1A1A1A">{occupation}</Typography>
         </Box>
       </Box>
@@ -101,11 +106,15 @@ const UserWidget = ({ userId, picturePath }) => {
       {/* AMOUNTDONATED / TOKENS */}
       <Box p="1rem 0">
         <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
+        <Tooltip title="Amount Donated">
           <PaidOutlined fontSize="large" sx={{ color: "#62828F" }} />
+        </Tooltip>
           <Typography color={medium}>{amountDonated}</Typography>
         </Box>
         <Box display="flex" alignItems="center" gap="1rem">
-          <TokenOutlined fontSize="large" sx={{ color: "#62828F" }} />
+          <Tooltip title="Tokens">
+            <TokenOutlined fontSize="large" sx={{ color: "#62828F" }} />
+          </Tooltip>
           <Typography color={medium}>{tokens}</Typography>
         </Box>
       </Box>
