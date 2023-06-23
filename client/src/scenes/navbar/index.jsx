@@ -173,18 +173,19 @@ const Navbar = () => {
             alignItems="center"
             gap="3rem"
           >
-            <Typography variant="h4">
-              <Link
-                to="/volunteer"
-                style={{
-                  textDecoration: "none",
-                  color: "#333333",
-                  textTransform: "uppercase",
-                }}
-              >
-                Volunteer
-              </Link>
-            </Typography>
+          <Typography variant="h4">
+            <span
+              onClick={handleVolunteerClick} // use the custom click handler here
+              style={{
+                textDecoration: "none",
+                color: "#333333",
+                textTransform: "uppercase",
+                cursor: "pointer", // To make it look clickable
+              }}
+            >
+              Volunteer
+            </span>
+          </Typography>
             <Typography variant="h4">
               <Link
                 to="/events"
@@ -227,6 +228,34 @@ const Navbar = () => {
                 </Link>
               </Typography>
             </Box>
+            {user ? (
+            <Typography variant="h4">
+              <span
+                onClick={handleLogout}
+                style={{
+                  textDecoration: "none",
+                  color: "#333333",
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                }}
+              >
+                Log Out
+              </span>
+            </Typography>
+          ) : (
+            <Typography variant="h4">
+              <Link
+                to="/login"
+                style={{
+                  textDecoration: "none",
+                  color: "#333333",
+                  textTransform: "uppercase",
+                }}
+              >
+                Log In
+              </Link>
+            </Typography>
+          )}
           </FlexBetween>
         </Box>
       )}
