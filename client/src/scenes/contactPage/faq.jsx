@@ -37,7 +37,7 @@ const FAQ = () => {
           Frequently Asked Questions
         </Typography>
       </Box>
-      <Box sx={{ padding: "0 2rem" }}>
+      <Box sx={{ padding: "2rem" }}>
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
             <Accordion sx={{ bgcolor: "#F5F5F5", mb: "1rem" }}>
